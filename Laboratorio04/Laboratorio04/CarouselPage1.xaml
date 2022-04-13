@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Laboratorio04.CarouselPage1">
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iO ,Android"  Value="0,40,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+
+        <StackLayout>
+            <Label Text="Red" FontSize="Medium" HorizontalOptions="Center" />
+            <BoxView Color="Red" WidthRequest="200" HeightRequest="200"
+                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <StackLayout>
+            <Label Text="gree" FontSize="Medium" HorizontalOptions="Center" />
+            <BoxView Color="Green" WidthRequest="200" HeightRequest="200"
+                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <StackLayout>
+            <Label Text="blue" FontSize="Medium" HorizontalOptions="Center" />
+            <BoxView Color="Blue" WidthRequest="200" HeightRequest="200"
+                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+        <Button Text="Close" x:Name="btnClose" />
+    </ContentPage>
+</CarouselPage>
